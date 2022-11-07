@@ -1,3 +1,8 @@
+.content-wrapper {
+    flex: 1;
+}
+
+
 html {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -28,10 +33,6 @@ button {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-
-.content-wrapper {
-    flex: 1;
 }
 
 .header {
@@ -256,7 +257,7 @@ footer .container {
 }
 
 .footer_header {
-	margin: 10px 0;
+	margin: 20px 0;
 	text-transform: uppercase;
 	font-size: 18px;
 	font-weight: 400;
@@ -264,6 +265,7 @@ footer .container {
 }
 
 .footer_link {
+	margin: 5px 0;
 	padding: 5px 0px;
 	width: fit-content;
 	text-decoration: none;
@@ -288,8 +290,9 @@ footer .container {
 }
 
 .remaining {
-	padding: 6px;
+	padding: 8px 0 14px;
 	border-top: 1px solid rgb(0, 0, 0, 0.2);
+	text-align: center;
 	font-size: 12px;
 	font-style: italic;
 }
@@ -392,10 +395,10 @@ footer .container {
 
 .slide_btn {
 	height: 100%;
+	width: 20px;
 	padding: 0;
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+	top: 0;
 	border-radius: 0;
 	border: none;
 	background-color: transparent;
@@ -403,9 +406,9 @@ footer .container {
 
 .slide_btn img {
 	margin: auto;
-	height: 20px;
-	display: block;
 	width: 100%;
+	height: auto;
+	display: block;
 }
 
 .slide_btn.prev {
@@ -441,6 +444,7 @@ footer .container {
 	border: 1px solid #000000;
 	background-color: transparent;
 	cursor: pointer;
+	color: #000000;
 	font-size: 14px;
 	font-weight: 400;
 }
@@ -548,13 +552,13 @@ footer .container {
 }
 
 .payment_descr p {
-	font-size: 16px;
+	font-size: 18px;
 	color: rgb(105, 103, 103);
 }
 
 .payment_subheader {
 	margin: 15px 0;
-	font-size: 24px;
+	font-size: 26px;
 	color: #000000;
 }
 
@@ -584,6 +588,7 @@ footer .container {
 }
 
 .about_title {
+	margin-top: 50px;
 	text-transform: uppercase;
 	font-size: 20px;
 	font-weight: 100;
@@ -594,7 +599,7 @@ footer .container {
 .about_descr {
 	width: 100%;
 	max-width: 400px;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 100;
 	line-height: 1.7;
 	color: rgb(105, 103, 103);
@@ -702,10 +707,6 @@ footer .container {
 
 @media all and (max-width: 800px) {
 
-	.header {
-		padding: 0 20px;
-	}
-
 	.header_nav {
 		padding: 15px 0;
 	}
@@ -727,7 +728,6 @@ footer .container {
 
 	.header_link:last-child {
 		border-right: 0.5px solid rgba(105, 103, 103, 0.5);
-		;
 	}
 
 	.header_link img {
@@ -752,7 +752,7 @@ footer .container {
 	}
 
 	.promo_header {
-		font-size: 18px;
+		font-size: 20px;
 	}
 
 	.carousel-item {
@@ -761,8 +761,6 @@ footer .container {
 
 	.promo_catalog {
 		margin: 20px auto;
-		padding: 10px 30px;
-		font-size: 14px;
 	}
 
 	.catalog {
@@ -771,11 +769,11 @@ footer .container {
 
 	.catalog_header {
 		margin: 40px 0 20px;
-		font-size: 18px;
+		font-size: 20px;
 	}
 
 	:root {
-		--fs-catalog-descr: 16px;
+		--fs-catalog-descr: 18px;
 		--lh-catalog-descr: 1.8;
 		--pad-catalog-descr: 20px;
 	}
@@ -786,6 +784,7 @@ footer .container {
 
 	.showTextClick_btn {
 		margin-left: 0px;
+		color: #000000;
 		font-size: 14px;
 	}
 
@@ -816,12 +815,11 @@ footer .container {
 	}
 
 	.footer_header {
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	.footer_link {
-		margin: 3px 0;
-		padding: 2px 0px;
+		padding: 3px 0px;
 		font-size: 14px;
 	}
 
@@ -840,7 +838,7 @@ footer .container {
 
 	.payment_header {
 		margin: 0 0 20px;
-		font-size: 22px;
+		font-size: 26px;
 	}
 
 	.payment_info {
@@ -853,9 +851,8 @@ footer .container {
 		align-self: flex-end;
 	}
 
-
 	.payment_image img {
-		width: 250px;
+		width: 300px;
 	}
 
 	.payment_descr {
@@ -863,20 +860,10 @@ footer .container {
 		padding: 0;
 	}
 
-	.payment_descr p {
-		font-size: 14px;
-	}
-
 	.payment_subheader {
 		margin: 15px 0;
-		font-size: 18px;
+		font-size: 22px;
 	}
-
-	.payment_item {
-		padding: 3px 0;
-		font-size: 14px;
-	}
-
 
 	.about {
 		margin-top: 20px;
@@ -894,42 +881,16 @@ footer .container {
 	}
 
 	.about_title {
+		margin-top: 30px;
 		font-size: 16px;
 	}
 
 	.about_descr {
 		max-width: unset;
-		font-size: 14px;
-		line-height: 1.4;
 	}
 
 	.about_image {
 		margin-left: 0;
-	}
-
-	.about_blockquote {
-		font-size: 14px;
-		margin: 14px 14px 14px 0;
-		padding: 6px 24px;
-	}
-
-	.about_blockquote:before {
-		height: 36px;
-		margin-top: -1.2em;
-	}
-
-	.about_blockquote:after {
-		font-size: 46px;
-		line-height: 22px;
-	}
-
-	.about_blockquote cite {
-		font-size: 14px;
-		padding-top: 8px;
-	}
-
-	.about .about_list li {
-		margin-top: 6px;
 	}
 
 	.place {
@@ -969,26 +930,12 @@ footer .container {
 		padding: 0 10px;
 	}
 
-	.logo_link {
-		font-size: 16px;
-	}
-
 	.logo_link img {
 		margin-right: 4px;
 		height: 25px;
 	}
-
-	.header_link {
-		margin: 0;
-		padding: 10px;
-	}
-
-	.filter {
-		padding: 5px 0;
-	}
-
+	
 	.filter_item {
-		padding: 5px 8px 0;
 		margin-bottom: 5px;
 	}
 
@@ -1002,7 +949,7 @@ footer .container {
 	}
 
 	.promo_header {
-		font-size: 16px;
+		font-size: 18px;
 	}
 
 	.carousel-item {
@@ -1014,9 +961,8 @@ footer .container {
 	}
 
 	.promo_catalog {
-		margin: 20px auto;
-		padding: 8px 25px;
-		font-size: 13px;
+		padding: 10px 30px;
+		font-size: 14px;
 	}
 
 	.catalog {
@@ -1025,17 +971,16 @@ footer .container {
 
 	.catalog_header {
 		margin: 40px 0 0;
-		font-size: 16px;
+		font-size: 18px;
 	}
 
 	:root {
-		--fs-catalog-descr: 13px;
-		--lh-catalog-descr: 1.6;
+		--fs-catalog-descr: 16px;
 		--pad-catalog-descr: 10px;
 	}
 
 	.catalog_descr {
-		min-height: calc(9*var(--lh-catalog-descr)*var(--fs-catalog-descr) + 2*var(--pad-catalog-descr));
+		min-height: calc(10*var(--lh-catalog-descr)*var(--fs-catalog-descr) + 2*var(--pad-catalog-descr));
 	}
 
 	.showTextClick_btn {
@@ -1050,10 +995,6 @@ footer .container {
 
 	.catalog_card:nth-child(even) {
 		margin-left: 0;
-	}
-
-	.catalog_image {
-		height: unset;
 	}
 
 	.catalog_price {
@@ -1087,8 +1028,7 @@ footer .container {
 	}
 
 	.footer_header {
-		margin: 5px 0;
-		font-size: 14px;
+		margin: 10px 0;
 		font-weight: bold;
 	}
 
@@ -1096,39 +1036,60 @@ footer .container {
 		margin-bottom: 15px;
 	}
 
-	.footer_link {
-		padding: 0px;
-	}
-
-	.footer_link img {
-		width: 12px;
-	}
-
 	.navigation {
 		padding: 20px 10px 10px;
 	}
 
+
+	/* .about_blockquote {
+		font-size: 14px;
+		margin: 14px 14px 14px 0;
+		padding: 6px 24px;
+	}
+
+	.about_blockquote:before {
+		height: 36px;
+		margin-top: -1.2em;
+	}
+
+	.about_blockquote:after {
+		font-size: 46px;
+		line-height: 22px;
+	}
+
+	.about_blockquote cite {
+		font-size: 14px;
+		padding-top: 8px;
+	} */
+
+	.about_blockquote {
+		font-size: 15px;
+	}
+
+	.about_blockquote cite {
+		font-size: 14px;
+	}
 	.payment {
 		padding: 10px;
 	}
 
 	.payment_header {
 		margin: 0 0 10px;
-		font-size: 18px;
+		font-size: 22px;
 	}
 
 	.payment_image img {
-		width: 200px;
+		width: 250px;
 	}
 
 	.payment_descr p {
 		margin: 5px 0;
-		font-size: 13px;
+		font-size: 15px;
 	}
 
 	.payment_subheader {
 		margin: 10px 0;
-		font-size: 16px;
+		font-size: 18px;
 	}
 
 	.payment_list {
@@ -1137,7 +1098,7 @@ footer .container {
 
 	.payment_item {
 		padding: 3px 0;
-		font-size: 13px;
+		font-size: 16px;
 	}
 
 	.place_info {
@@ -1157,17 +1118,8 @@ footer .container {
 
 @media all and (max-width: 330px) {
 
-	.header {
-		padding: 0 10px;
-	}
-
 	.logo_link {
 		font-size: 16px;
-	}
-
-	.logo_link img {
-		margin-right: 4px;
-		height: 25px;
 	}
 
 	.logo_link .link_text {
@@ -1175,7 +1127,6 @@ footer .container {
 	}
 
 	.header_link {
-		margin: 0;
 		padding: 10px;
 	}
 
@@ -1194,7 +1145,6 @@ footer .container {
 	}
 
 	.catalog_card {
-		margin: 10px 10px 0;
 		width: 160px;
 		max-width: unset;
 	}
@@ -1207,26 +1157,20 @@ footer .container {
 		height: unset;
 	}
 
-	.catalog_price {
-		margin: 6px 0 0;
-		font-size: 16px;
-	}
-
-	.catalog_title {
-		margin: 6px 0 10px;
+	.payment_item {
 		font-size: 14px;
-		line-height: 1.2;
 	}
 
-	.catalog_btn {
-		padding: 4px;
+	.payment_image {
+		align-self: center;
 	}
 
-	.new .catalog_image::before {
-		margin: 4px;
-	}
+	.payment_image img {
+		width: 100%;
+	}	
 
-	.sale .catalog_price::after {
-		font-size: 12px;
+	.about_descr {
+		font-size: 14px;
+		line-height: 1.4;
 	}
 }
